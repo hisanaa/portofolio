@@ -6,7 +6,14 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        'custom-gray' : '#f9f9fc',
+      }
+    },
+    fontFamily : {
+      'poppins' : ["Poppins", 'sans-serif'] 
+    }
   },
   variants: {
     extend: {},

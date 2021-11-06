@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+// portfolio
+Route::get('/', 'HomeController@index');
+Route::get('/portfolio', 'PortfolioController@index');
+Route::get('/portfolio/create', 'PortfolioController@create');
+Route::post('/portfolio', 'PortfolioController@store');
